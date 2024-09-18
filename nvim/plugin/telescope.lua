@@ -69,7 +69,7 @@ local function fuzzy_grep_current_file_type()
   grep_current_file_type(fuzzy_grep)
 end
 
-vim.keymap.set('n', '<leader>tp', function()
+vim.keymap.set('n', '<leader><leader>', function()
   builtin.find_files()
 end, { desc = '[t]elescope find files - ctrl[p] style' })
 vim.keymap.set('n', '<M-p>', builtin.oldfiles, { desc = '[telescope] old files' })
@@ -89,7 +89,7 @@ vim.keymap.set('n', '<leader>tc', builtin.quickfix, { desc = '[t]elescope quickf
 vim.keymap.set('n', '<leader>tq', builtin.command_history, { desc = '[t]elescope command history [q]' })
 vim.keymap.set('n', '<leader>tl', builtin.loclist, { desc = '[t]elescope [l]oclist' })
 vim.keymap.set('n', '<leader>tr', builtin.registers, { desc = '[t]elescope [r]egisters' })
-vim.keymap.set('n', '<leader>tbb', builtin.buffers, { desc = '[t]elescope [b]uffers [b]' })
+vim.keymap.set('n', '<leader>bb', builtin.buffers, { desc = '[t]elescope [b]uffers [b]' })
 vim.keymap.set(
   'n',
   '<leader>tbf',
