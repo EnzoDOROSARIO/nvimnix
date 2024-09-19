@@ -96,6 +96,15 @@ g.editorconfig = true
 
 vim.opt.colorcolumn = '100'
 
+vim.opt.termguicolors = true
+vim.opt.background = "dark"
+vim.cmd("colorscheme quiet")
+-- Set custom highlights
+vim.api.nvim_set_hl(0, "Keyword", { bold = true })
+vim.api.nvim_set_hl(0, "Comment", { italic = true })
+vim.api.nvim_set_hl(0, "Constant", { fg = "#999999" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#333333" })
+
 -- Native plugins
 cmd.filetype('plugin', 'indent', 'on')
 cmd.packadd('cfilter') -- Allows filtering the quickfix list with :cfdo
