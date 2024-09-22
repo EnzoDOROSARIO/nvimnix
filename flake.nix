@@ -12,6 +12,10 @@
     #   url = "github:Cassin01/wf.nvim";
     #   flake = false;
     # };
+    solarized-osaka-nvim = {
+      url = "github:craftzdog/solarized-osaka.nvim";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {

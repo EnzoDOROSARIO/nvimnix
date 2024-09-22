@@ -81,6 +81,7 @@ with final.pkgs.lib; let
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
     conform-nvim
+    (mkNvimPlugin inputs.solarized-osaka-nvim "solarized-osaka.nvim")
   ];
 
   extraPackages = with pkgs; [
