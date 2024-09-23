@@ -5,6 +5,7 @@ vim.g.did_load_lualine_plugin = true
 
 local navic = require('nvim-navic')
 navic.setup {}
+vim.g.navic_silence = true
 
 ---Indicators for special modes,
 ---@return string status

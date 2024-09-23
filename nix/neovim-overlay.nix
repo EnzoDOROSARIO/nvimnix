@@ -81,6 +81,8 @@ with final.pkgs.lib; let
     conform-nvim
     (mkNvimPlugin inputs.solarized-osaka-nvim "solarized-osaka.nvim")
     neo-tree-nvim
+    copilot-lua
+    copilot-cmp
   ];
 
   extraPackages = with pkgs; [
