@@ -90,6 +90,7 @@ with final.pkgs.lib; let
     lua-language-server
     nil # nix LSP
     nodejs
+    deno
     nodePackages.typescript
     nodePackages.typescript-language-server
     nodePackages.prettier
